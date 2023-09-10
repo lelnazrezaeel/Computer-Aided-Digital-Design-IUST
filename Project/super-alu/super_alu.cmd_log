@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.xst" -ofn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+xst -intstyle ise -ifn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.xst" -ofn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+xst -intstyle ise -ifn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.xst" -ofn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.syr" 
+xst -intstyle ise -ifn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.xst" -ofn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.syr" 
+xst -intstyle ise -ifn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.xst" -ofn "D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o super_alu_map.ncd super_alu.ngd super_alu.pcf 

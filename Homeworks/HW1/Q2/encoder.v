@@ -1,0 +1,25 @@
+module enc(
+	A,  
+	q,
+	enable
+);
+
+//define variables
+input [7 : 0] A;
+output [2 : 0] q;
+input enable;
+wire [2 : 0] outp;
+wire enablebar;
+
+//implement encoder
+not(enot, en);
+or(outp[0], A[1], A[3], A[5], A[7]);
+or(outp[1], A[2], A[3], A[6], A[7]);
+or(outp[2], A[4], A[5], A[6], A[7]);
+
+//make it low active
+and(q[0] ,outp[0], enablebar);
+and(q[1] ,outp[1], enablebar);
+and(q[2] ,outp[2], enablebar);
+
+endmodule

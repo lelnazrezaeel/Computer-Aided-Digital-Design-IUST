@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu_test_isim_beh.exe" -prj "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu_test_beh.prj" "work.super_alu_test" 

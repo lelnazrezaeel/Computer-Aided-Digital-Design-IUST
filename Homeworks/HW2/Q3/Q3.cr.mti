@@ -1,0 +1,12 @@
+E:/University/Term6/CAD/HW2/Q3/Queue.v {0 {vlog -work work -vopt -stats=none E:/University/Term6/CAD/HW2/Q3/Queue.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module queue
+** Warning: E:/University/Term6/CAD/HW2/Q3/Queue.v(2): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+** Warning: E:/University/Term6/CAD/HW2/Q3/Queue.v(5): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+** Warning: E:/University/Term6/CAD/HW2/Q3/Queue.v(7): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+** Error: E:/University/Term6/CAD/HW2/Q3/Queue.v(21): (vlog-2730) Undefined variable: 'mem'.
+-- Compiling module queue_tb
+** Warning: E:/University/Term6/CAD/HW2/Q3/Queue.v(60): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+** Warning: E:/University/Term6/CAD/HW2/Q3/Queue.v(61): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
+
+} {7.0 8.0} {}}

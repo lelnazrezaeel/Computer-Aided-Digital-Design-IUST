@@ -1,0 +1,24 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu_isim_beh.exe -prj D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu_beh.prj work.super_alu 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" into library work
+Parsing VHDL file "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" into library work
+Parsing VHDL file "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Div_16_by_8 [\Div_16_by_8(8)\]
+Compiling architecture behavioral of entity ALU [\ALU(8)\]
+Compiling architecture behavioral of entity super_alu
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu_isim_beh.exe
+Fuse Memory Usage: 38652 KB
+Fuse CPU Usage: 843 ms

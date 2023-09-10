@@ -1,0 +1,598 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: super_alu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "super_alu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "super_alu"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-tq144
+
+---- Source Options
+Top Module Name                    : super_alu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" in Library work.
+Architecture behavioral of Entity div_16_by_8 is up to date.
+Compiling vhdl file "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" in Library work.
+Entity <super_alu> compiled.
+Entity <super_alu> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <super_alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <Div_16_by_8> in library <work> (architecture <behavioral>) with generics.
+	n = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <super_alu> in library <work> (Architecture <behavioral>).
+Entity <super_alu> analyzed. Unit <super_alu> generated.
+
+Analyzing generic Entity <ALU> in library <work> (Architecture <behavioral>).
+	width = 8
+WARNING:Xst:819 - "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" line 36: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <tmpres>
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing generic Entity <Div_16_by_8> in library <work> (Architecture <behavioral>).
+	n = 8
+Entity <Div_16_by_8> analyzed. Unit <Div_16_by_8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Div_16_by_8>.
+    Related source file is "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd".
+WARNING:Xst:646 - Signal <tmpq<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tmp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit adder for signal <t2$addsub0000> created at line 29.
+    Found 17-bit subtractor for signal <tmp$sub0000> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0001> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0002> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0003> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0004> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0005> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0006> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0007> created at line 34.
+    Found 17-bit subtractor for signal <tmp$sub0008> created at line 34.
+    Found 9-bit adder for signal <tmpq$addsub0000> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0001> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0002> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0003> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0004> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0005> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0006> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0007> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0008> created at line 37.
+    Found 9-bit adder for signal <tmpq$addsub0009> created at line 51.
+    Found 1-bit xor2 for signal <tmpq$xor0000> created at line 50.
+    Found 16-bit adder for signal <tmpr$addsub0000> created at line 47.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0000> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0001> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0002> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0003> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0004> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0005> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0006> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0007> created at line 33.
+    Found 16-bit comparator greatequal for signal <tmpr$cmp_ge0008> created at line 33.
+    Summary:
+	inferred  21 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <Div_16_by_8> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd".
+WARNING:Xst:646 - Signal <tmpr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Result<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" line 48: The result of a 8x8-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" line 68: The result of a 40x8-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" line 70: The result of a 48x8-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" line 64: The result of a 24x8-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 9-bit 7-to-1 multiplexer for signal <Result>.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0000> created at line 134.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0001> created at line 76.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0002> created at line 77.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0003> created at line 79.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0004> created at line 81.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0005> created at line 83.
+    Found 8-bit comparator greatequal for signal <Result$cmp_ge0006> created at line 85.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0000> created at line 136.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0001> created at line 138.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0002> created at line 140.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0003> created at line 142.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0004> created at line 144.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0005> created at line 146.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0006> created at line 148.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0007> created at line 150.
+    Found 8-bit comparator greater for signal <Result$cmp_gt0008> created at line 152.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0000> created at line 134.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0001> created at line 136.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0002> created at line 138.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0003> created at line 140.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0004> created at line 142.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0005> created at line 144.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0006> created at line 146.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0007> created at line 148.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0008> created at line 150.
+    Found 8-bit comparator lessequal for signal <Result$cmp_le0009> created at line 152.
+    Found 8-bit comparator less for signal <Result$cmp_lt0000> created at line 111.
+    Found 8-bit comparator less for signal <Result$cmp_lt0001> created at line 112.
+    Found 8-bit comparator less for signal <Result$cmp_lt0002> created at line 114.
+    Found 8-bit comparator less for signal <Result$cmp_lt0003> created at line 116.
+    Found 8-bit comparator less for signal <Result$cmp_lt0004> created at line 118.
+    Found 8-bit comparator less for signal <Result$cmp_lt0005> created at line 120.
+    Found 8-bit comparator less for signal <Result$cmp_lt0006> created at line 122.
+    Found 8-bit comparator less for signal <Result$cmp_lt0007> created at line 124.
+    Found 8-bit comparator less for signal <Result$cmp_lt0008> created at line 126.
+    Found 8-bit comparator less for signal <Result$cmp_lt0009> created at line 128.
+    Found 8-bit comparator less for signal <Result$cmp_lt0010> created at line 130.
+    Found 8-bit comparator less for signal <Result$cmp_lt0011> created at line 132.
+    Found 8-bit comparator less for signal <Result$cmp_lt0012> created at line 76.
+    Found 8-bit comparator less for signal <Result$cmp_lt0013> created at line 79.
+    Found 8-bit comparator less for signal <Result$cmp_lt0014> created at line 83.
+    Found 8x8-bit multiplier for signal <Result$mult0007> created at line 48.
+    Found 40x8-bit multiplier for signal <Result$mult0012> created at line 68.
+    Found 48x8-bit multiplier for signal <Result$mult0013> created at line 70.
+    Found 24x8-bit multiplier for signal <Result$mult0020> created at line 64.
+    Found 16x8-bit multiplier for signal <Result$mult0022> created at line 70.
+    Found 8x8-bit multiplier for signal <Result$mult0023> created at line 68.
+    Found 32x8-bit multiplier for signal <Result$mult0024> created at line 68.
+    Found 24x8-bit multiplier for signal <Result$mult0025> created at line 70.
+    Found 32x8-bit multiplier for signal <Result$mult0026> created at line 70.
+    Found 40x8-bit multiplier for signal <Result$mult0027> created at line 70.
+    Found 16x8-bit multiplier for signal <Result$mult0028> created at line 64.
+    Found 16x8-bit multiplier for signal <Result$mult0029> created at line 68.
+    Found 24x8-bit multiplier for signal <Result$mult0030> created at line 68.
+    Found 9-bit 8-to-1 multiplexer for signal <Result$mux0000> created at line 54.
+    Found 8-bit adder for signal <temp$add0000> created at line 42.
+    Found 8-bit subtractor for signal <temp$sub0000> created at line 45.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  13 Multiplier(s).
+	inferred  41 Comparator(s).
+	inferred  18 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <super_alu>.
+    Related source file is "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd".
+Unit <super_alu> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 39
+ 16x8-bit multiplier                                   : 9
+ 24x8-bit multiplier                                   : 9
+ 32x8-bit multiplier                                   : 6
+ 40x8-bit multiplier                                   : 6
+ 48x8-bit multiplier                                   : 3
+ 8x8-bit multiplier                                    : 6
+# Adders/Subtractors                                   : 69
+ 16-bit adder                                          : 3
+ 17-bit subtractor                                     : 27
+ 8-bit adder                                           : 6
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 30
+# Comparators                                          : 150
+ 16-bit comparator greatequal                          : 27
+ 8-bit comparator greatequal                           : 21
+ 8-bit comparator greater                              : 27
+ 8-bit comparator less                                 : 45
+ 8-bit comparator lessequal                            : 30
+# Multiplexers                                         : 6
+ 9-bit 7-to-1 multiplexer                              : 3
+ 9-bit 8-to-1 multiplexer                              : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 39
+ 16x8-bit multiplier                                   : 9
+ 24x8-bit multiplier                                   : 9
+ 32x8-bit multiplier                                   : 6
+ 40x8-bit multiplier                                   : 6
+ 48x8-bit multiplier                                   : 3
+ 8x8-bit multiplier                                    : 6
+# Adders/Subtractors                                   : 69
+ 16-bit subtractor                                     : 24
+ 6-bit adder                                           : 18
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 12
+ 8-bit subtractor                                      : 6
+ 9-bit adder                                           : 6
+# Comparators                                          : 150
+ 16-bit comparator greatequal                          : 27
+ 8-bit comparator greatequal                           : 21
+ 8-bit comparator greater                              : 27
+ 8-bit comparator less                                 : 45
+ 8-bit comparator lessequal                            : 30
+# Multiplexers                                         : 6
+ 9-bit 7-to-1 multiplexer                              : 3
+ 9-bit 8-to-1 multiplexer                              : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <super_alu> ...
+
+Optimizing unit <Div_16_by_8> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block super_alu, actual ratio is 215.
+Optimizing block <super_alu> to meet ratio 100 (+ 5) of 768 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <super_alu>, final ratio is 188.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : super_alu.ngr
+Top Level Output File Name         : super_alu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 49
+
+Cell Usage :
+# BELS                             : 6421
+#      GND                         : 1
+#      INV                         : 158
+#      LUT1                        : 9
+#      LUT2                        : 686
+#      LUT3                        : 842
+#      LUT4                        : 900
+#      MULT_AND                    : 291
+#      MUXCY                       : 1665
+#      MUXF5                       : 107
+#      MUXF6                       : 42
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 1716
+# IO Buffers                       : 49
+#      IBUF                        : 41
+#      OBUF                        : 8
+# MULTs                            : 3
+#      MULT18X18                   : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50tq144-5 
+
+ Number of Slices:                     1445  out of    768   188% (*) 
+ Number of 4 input LUTs:               2595  out of   1536   168% (*) 
+ Number of IOs:                          49
+ Number of bonded IOBs:                  49  out of     97    50%  
+ Number of MULT18X18s:                    3  out of      4    75%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 108.159ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1642737155553919000000000000 / 8
+-------------------------------------------------------------------------
+Delay:               108.159ns (Levels of Logic = 110)
+  Source:            input<0> (PAD)
+  Destination:       output<7> (PAD)
+
+  Data Path: input<0> to output<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.715   1.790  input_0_IBUF (input_0_IBUF)
+     LUT3:I2->O            5   0.479   1.078  alu2/div/Madd_t2_addsub0000_cy<2>11 (alu2/div/Madd_t2_addsub0000_cy<2>)
+     LUT3:I0->O            5   0.479   0.953  alu2/div/Madd_t2_addsub0000_cy<4>11 (alu2/div/Madd_t2_addsub0000_cy<4>)
+     LUT4:I1->O           17   0.479   1.313  alu2/div/t2_mux0000<7>1 (alu2/div/t2_mux0000<7>)
+     LUT2:I1->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0000_lut<7> (alu2/div/Mcompar_tmpr_cmp_ge0000_lut<7>)
+     MUXCY:S->O           24   0.644   1.822  alu2/div/Mcompar_tmpr_cmp_ge0000_cy<7> (alu2/div/tmpr_cmp_ge0000)
+     LUT3:I0->O            3   0.479   0.771  alu2/div/tmpr_mux0000<8>1 (alu2/div/tmpr_mux0000<8>)
+     MUXCY:DI->O           1   0.774   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<1> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<1>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<2> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<2>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<3> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<3>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<4> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<4>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<5> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<5>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<6> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<6>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<7> (alu2/div/Mcompar_tmpr_cmp_ge0001_cy<7>)
+     MUXCY:CI->O          27   0.265   1.846  alu2/div/Mcompar_tmpr_cmp_ge0001_cy<8> (alu2/div/tmpr_cmp_ge0001)
+     LUT3:I0->O            3   0.479   0.771  alu2/div/tmpr_mux0001<7>1 (alu2/div/tmpr_mux0001<7>)
+     MUXCY:DI->O           1   0.774   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<1> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<1>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<2> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<2>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<3> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<3>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<4> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<4>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<5> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<5>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<6> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<6>)
+     MUXCY:CI->O           1   0.055   0.000  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<7> (alu2/div/Mcompar_tmpr_cmp_ge0002_cy<7>)
+     MUXCY:CI->O          29   0.265   1.856  alu2/div/Mcompar_tmpr_cmp_ge0002_cy<8> (alu2/div/tmpr_cmp_ge0002)
+     LUT3:I0->O            3   0.479   1.066  alu2/div/tmpr_mux0002<13>1 (alu2/div/tmpr_mux0002<13>)
+     LUT3:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0003_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0003_lut<8>)
+     MUXCY:S->O           32   0.644   1.870  alu2/div/Mcompar_tmpr_cmp_ge0003_cy<8> (alu2/div/tmpr_cmp_ge0003)
+     LUT3:I0->O            3   0.479   1.066  alu2/div/tmpr_mux0003<12>1 (alu2/div/tmpr_mux0003<12>)
+     LUT4:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0004_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0004_lut<8>)
+     MUXCY:S->O           34   0.644   1.880  alu2/div/Mcompar_tmpr_cmp_ge0004_cy<8> (alu2/div/tmpr_cmp_ge0004)
+     LUT3:I0->O            3   0.479   1.066  alu2/div/tmpr_mux0004<11>1 (alu2/div/tmpr_mux0004<11>)
+     LUT4:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0005_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0005_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  alu2/div/Mcompar_tmpr_cmp_ge0005_cy<8> (alu2/div/Mcompar_tmpr_cmp_ge0005_cy<8>)
+     MUXCY:CI->O          37   0.265   1.894  alu2/div/Mcompar_tmpr_cmp_ge0005_cy<9> (alu2/div/tmpr_cmp_ge0005)
+     LUT3:I0->O            3   0.479   1.066  alu2/div/tmpr_mux0005<10>1 (alu2/div/tmpr_mux0005<10>)
+     LUT4:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0006_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0006_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  alu2/div/Mcompar_tmpr_cmp_ge0006_cy<8> (alu2/div/Mcompar_tmpr_cmp_ge0006_cy<8>)
+     MUXCY:CI->O          37   0.265   1.894  alu2/div/Mcompar_tmpr_cmp_ge0006_cy<9> (alu2/div/tmpr_cmp_ge0006)
+     LUT3:I0->O            2   0.479   1.040  alu2/div/tmpr_mux0006<9>1 (alu2/div/tmpr_mux0006<9>)
+     LUT4:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0007_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0007_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  alu2/div/Mcompar_tmpr_cmp_ge0007_cy<8> (alu2/div/Mcompar_tmpr_cmp_ge0007_cy<8>)
+     MUXCY:CI->O          25   0.265   1.836  alu2/div/Mcompar_tmpr_cmp_ge0007_cy<9> (alu2/div/tmpr_cmp_ge0007)
+     LUT3:I0->O            1   0.479   0.976  alu2/div/tmpr_mux0007<8>1 (alu2/div/tmpr_mux0007<8>)
+     LUT4:I0->O            1   0.479   0.000  alu2/div/Mcompar_tmpr_cmp_ge0008_lut<8> (alu2/div/Mcompar_tmpr_cmp_ge0008_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  alu2/div/Mcompar_tmpr_cmp_ge0008_cy<8> (alu2/div/Mcompar_tmpr_cmp_ge0008_cy<8>)
+     MUXCY:CI->O           4   0.264   0.838  alu2/div/Mcompar_tmpr_cmp_ge0008_cy<9> (alu2/tmpres<0>)
+     LUT3:I2->O            3   0.479   1.066  alu2/div/Madd_tmpq_addsub0009_cy<2>11 (alu2/div/Madd_tmpq_addsub0009_cy<2>)
+     LUT3:I0->O            3   0.479   1.066  alu2/div/Madd_tmpq_addsub0009_cy<4>11 (alu2/div/Madd_tmpq_addsub0009_cy<4>)
+     LUT3:I0->O            1   0.479   0.704  alu2/div/Madd_tmpq_addsub0009_cy<6>11 (alu2/div/Madd_tmpq_addsub0009_cy<6>)
+     LUT4:I3->O            1   0.479   0.740  alu2/div/tmpq_mux0009<7>1 (alu2/tmpres<7>)
+     LUT3:I2->O            1   0.479   0.000  alu2/ALU_SEL<2>_63 (alu2/ALU_SEL<2>_63)
+     MUXF5:I1->O           1   0.314   0.740  alu2/ALU_SEL<2>_5_f5_2 (alu2/ALU_SEL<2>_5_f53)
+     LUT4:I2->O           21   0.479   1.458  alu2/ALU_SEL<2>417 (output2<7>)
+     LUT4:I1->O           17   0.479   1.313  aluz/div/t2_mux0000<2>1 (aluz/div/t2_mux0000<2>)
+     LUT2:I1->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_lut<2> (aluz/div/Mcompar_tmpr_cmp_ge0000_lut<2>)
+     MUXCY:S->O            1   0.435   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<2> (aluz/div/Mcompar_tmpr_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<3> (aluz/div/Mcompar_tmpr_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<4> (aluz/div/Mcompar_tmpr_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<5> (aluz/div/Mcompar_tmpr_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<6> (aluz/div/Mcompar_tmpr_cmp_ge0000_cy<6>)
+     MUXCY:CI->O          24   0.264   1.822  aluz/div/Mcompar_tmpr_cmp_ge0000_cy<7> (aluz/div/tmpr_cmp_ge0000)
+     LUT3:I0->O            3   0.479   0.771  aluz/div/tmpr_mux0000<8>1 (aluz/div/tmpr_mux0000<8>)
+     MUXCY:DI->O           1   0.774   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<1> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<2> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<3> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<4> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<5> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<6> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<7> (aluz/div/Mcompar_tmpr_cmp_ge0001_cy<7>)
+     MUXCY:CI->O          27   0.264   1.846  aluz/div/Mcompar_tmpr_cmp_ge0001_cy<8> (aluz/div/tmpr_cmp_ge0001)
+     LUT3:I0->O            3   0.479   0.771  aluz/div/tmpr_mux0001<7>1 (aluz/div/tmpr_mux0001<7>)
+     MUXCY:DI->O           1   0.774   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<1> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<2> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<3> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<4> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<5> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<6> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<7> (aluz/div/Mcompar_tmpr_cmp_ge0002_cy<7>)
+     MUXCY:CI->O          29   0.264   1.856  aluz/div/Mcompar_tmpr_cmp_ge0002_cy<8> (aluz/div/tmpr_cmp_ge0002)
+     LUT3:I0->O            3   0.479   1.066  aluz/div/tmpr_mux0002<13>1 (aluz/div/tmpr_mux0002<13>)
+     LUT3:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0003_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0003_lut<8>)
+     MUXCY:S->O           32   0.644   1.870  aluz/div/Mcompar_tmpr_cmp_ge0003_cy<8> (aluz/div/tmpr_cmp_ge0003)
+     LUT3:I0->O            3   0.479   1.066  aluz/div/tmpr_mux0003<12>1 (aluz/div/tmpr_mux0003<12>)
+     LUT4:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0004_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0004_lut<8>)
+     MUXCY:S->O           34   0.644   1.880  aluz/div/Mcompar_tmpr_cmp_ge0004_cy<8> (aluz/div/tmpr_cmp_ge0004)
+     LUT3:I0->O            3   0.479   1.066  aluz/div/tmpr_mux0004<11>1 (aluz/div/tmpr_mux0004<11>)
+     LUT4:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0005_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0005_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  aluz/div/Mcompar_tmpr_cmp_ge0005_cy<8> (aluz/div/Mcompar_tmpr_cmp_ge0005_cy<8>)
+     MUXCY:CI->O          37   0.264   1.894  aluz/div/Mcompar_tmpr_cmp_ge0005_cy<9> (aluz/div/tmpr_cmp_ge0005)
+     LUT3:I0->O            3   0.479   1.066  aluz/div/tmpr_mux0005<10>1 (aluz/div/tmpr_mux0005<10>)
+     LUT4:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0006_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0006_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  aluz/div/Mcompar_tmpr_cmp_ge0006_cy<8> (aluz/div/Mcompar_tmpr_cmp_ge0006_cy<8>)
+     MUXCY:CI->O          37   0.264   1.894  aluz/div/Mcompar_tmpr_cmp_ge0006_cy<9> (aluz/div/tmpr_cmp_ge0006)
+     LUT3:I0->O            2   0.479   1.040  aluz/div/tmpr_mux0006<9>1 (aluz/div/tmpr_mux0006<9>)
+     LUT4:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0007_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0007_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  aluz/div/Mcompar_tmpr_cmp_ge0007_cy<8> (aluz/div/Mcompar_tmpr_cmp_ge0007_cy<8>)
+     MUXCY:CI->O          25   0.264   1.836  aluz/div/Mcompar_tmpr_cmp_ge0007_cy<9> (aluz/div/tmpr_cmp_ge0007)
+     LUT3:I0->O            1   0.479   0.976  aluz/div/tmpr_mux0007<8>1 (aluz/div/tmpr_mux0007<8>)
+     LUT4:I0->O            1   0.479   0.000  aluz/div/Mcompar_tmpr_cmp_ge0008_lut<8> (aluz/div/Mcompar_tmpr_cmp_ge0008_lut<8>)
+     MUXCY:S->O            1   0.435   0.000  aluz/div/Mcompar_tmpr_cmp_ge0008_cy<8> (aluz/div/Mcompar_tmpr_cmp_ge0008_cy<8>)
+     MUXCY:CI->O           4   0.264   0.838  aluz/div/Mcompar_tmpr_cmp_ge0008_cy<9> (aluz/tmpres<0>)
+     LUT3:I2->O            3   0.479   1.066  aluz/div/Madd_tmpq_addsub0009_cy<2>11 (aluz/div/Madd_tmpq_addsub0009_cy<2>)
+     LUT3:I0->O            3   0.479   1.066  aluz/div/Madd_tmpq_addsub0009_cy<4>11 (aluz/div/Madd_tmpq_addsub0009_cy<4>)
+     LUT3:I0->O            1   0.479   0.704  aluz/div/Madd_tmpq_addsub0009_cy<6>11 (aluz/div/Madd_tmpq_addsub0009_cy<6>)
+     LUT4:I3->O            1   0.479   0.740  aluz/div/tmpq_mux0009<7>1 (aluz/tmpres<7>)
+     LUT3:I2->O            1   0.479   0.000  aluz/ALU_SEL<2>_63 (aluz/ALU_SEL<2>_63)
+     MUXF5:I1->O           1   0.314   0.740  aluz/ALU_SEL<2>_5_f5_2 (aluz/ALU_SEL<2>_5_f53)
+     LUT4:I2->O            1   0.479   0.000  aluz/ALU_SEL<2>4162 (aluz/ALU_SEL<2>4161)
+     MUXF5:I0->O           1   0.314   0.681  aluz/ALU_SEL<2>416_f5 (output_7_OBUF)
+     OBUF:I->O                 4.909          output_7_OBUF (output<7>)
+    ----------------------------------------
+    Total                    108.159ns (43.823ns logic, 64.335ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.77 secs
+ 
+--> 
+
+Total memory usage is 4544380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

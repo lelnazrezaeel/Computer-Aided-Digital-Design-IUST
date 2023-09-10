@@ -1,0 +1,3 @@
+vhdl work "div.vhd"
+vhdl work "simple_alu.vhd"
+vhdl work "super-alu.vhd"

@@ -1,0 +1,30 @@
+module dec(
+	A,
+	q,
+	enable
+);
+
+//define variables
+input [2 : 0] A;
+wire [2 : 0] Abar;
+output [7 : 0] q;
+input enable;
+wire enablebar;
+
+//not inputs & enable
+not (Abar[0], A[0]);
+not (Abar[1], A[1]);
+not (Abar[2], A[2]);
+not (enablebar, enable);
+
+//implement decoder
+and(q[0], Abar[2], Abar[1], Abar[0], enablebar);
+and(q[1], Abar[2], Abar[1], A[0], enablebar);
+and(q[2], Abar[2], A[1], Abar[0], enablebar);
+and(q[3], Abar[2], A[1], A[0], enablebar);
+and(q[4], A[2], Abar[1], Abar[0], enablebar);
+and(q[5], A[2], Abar[1], A[0],enablebar);
+and(q[6], A[2], A[1], Abar[0], enablebar);
+and(q[7], A[2], A[1], A[0], enablebar);
+
+endmodule 

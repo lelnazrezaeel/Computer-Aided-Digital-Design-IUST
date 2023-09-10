@@ -1,0 +1,10 @@
+E:/University/Term6/CAD/HW2/Q1/alu.v {1 {vlog -work work -vopt -stats=none E:/University/Term6/CAD/HW2/Q1/alu.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU
+-- Compiling module GCD
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}}

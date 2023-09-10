@@ -1,0 +1,47 @@
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+par -w -intstyle ise -ol high -mt off super_alu_map.ncd super_alu.ncd super_alu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml super_alu.twx super_alu.ncd -o super_alu.twr super_alu.pcf 
+bitgen -intstyle ise -f super_alu.ut super_alu.ncd 
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/super_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "super_alu.ngc" super_alu.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o super_alu_map.ncd super_alu.ngd super_alu.pcf 

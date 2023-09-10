@@ -1,0 +1,143 @@
+ISim log file
+Running: D:\iust stuff\4002\CAD\FinalProject\super-alu\super_alu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/iust stuff/4002/CAD/FinalProject/super-alu/super_alu_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# isim force add /super_alu/input 00001010000001100000001100000001000000100 -radix bin
+/super_alu/input: Could not convert given string value 00001010000001100000001100000001000000100 to an appropriate value.
+# isim force add /super_alu/input 00001010000001100000001100000001000000100 -radix bin
+/super_alu/input: Could not convert given string value 00001010000001100000001100000001000000100 to an appropriate value.
+# run all
+# run all
+# run all
+# isim force add /super_alu/input 00001010000001100000001100000001000000100 -radix bin
+/super_alu/input: Could not convert given string value 00001010000001100000001100000001000000100 to an appropriate value.
+# isim force add /super_alu/input 00001010000001100000001100000001000000100 -radix bin
+/super_alu/input: Could not convert given string value 00001010000001100000001100000001000000100 to an appropriate value.
+# isim force add /super_alu/input 140C060204 -radix hex
+# isim force add /super_alu/input 140C060204 -radix hex
+# run all
+at 1 us, Instance /super_alu/aluz/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu1/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us, Instance /super_alu/alu2/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1 us(2), Instance /super_alu/aluz/div/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

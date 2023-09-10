@@ -1,0 +1,3 @@
+vhdl isim_temp "register.vhd"
+vhdl isim_temp "super_alu.vhd"
+vhdl isim_temp "super_alu_test.vhd"

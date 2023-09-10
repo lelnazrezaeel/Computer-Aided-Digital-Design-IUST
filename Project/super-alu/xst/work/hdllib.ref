@@ -1,0 +1,6 @@
+EN div_16_by_8 NULL "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" sub00/vhpl00 1657693507
+AR div_16_by_8 behavioral "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" sub00/vhpl01 1657693508
+AR alu behavioral "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" sub00/vhpl03 1657693510
+AR super_alu behavioral "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" sub00/vhpl05 1657693512
+EN alu NULL "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" sub00/vhpl02 1657693509
+EN super_alu NULL "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" sub00/vhpl04 1657693511

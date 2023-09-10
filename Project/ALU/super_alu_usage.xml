@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="7">
+<DesignStatistics TimeStamp="Wed Jul 13 10:39:07 2022"><group name="NetStatistics">
+<item name="NumNets_Active" rev="7">
+<attrib name="value" value="32"/></item>
+<item name="NumNets_Gnd" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Vcc" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_DOUBLE" rev="7">
+<attrib name="value" value="22"/></item>
+<item name="NumNodesOfType_Gnd_GENERIC" rev="7">
+<attrib name="value" value="31"/></item>
+<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="7">
+<attrib name="value" value="31"/></item>
+<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="7">
+<attrib name="value" value="31"/></item>
+<item name="NumNodesOfType_Gnd_OUTBOUND" rev="7">
+<attrib name="value" value="14"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="7">
+<attrib name="value" value="17"/></item>
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="7">
+<attrib name="value" value="31"/></item>
+<item name="NumNodesOfType_Gnd_PINBOUNCE" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="7">
+<attrib name="value" value="31"/></item>
+<item name="NumNodesOfType_Gnd_QUAD" rev="7">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Gnd_SINGLE" rev="7">
+<attrib name="value" value="19"/></item>
+<item name="NumNodesOfType_Vcc_GENERIC" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_HVCCOUT" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_IOBOUTPUT" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_PADINPUT" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="7">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-IOBM" rev="7">
+<attrib name="value" value="16"/></item>
+<item name="IOB-IOBS" rev="7">
+<attrib name="value" value="16"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="6">
+<attrib name="value" value="32"/></item>
+<item name="AGG_IO" rev="6">
+<attrib name="value" value="32"/></item>
+<item name="NUM_BONDED_IOB" rev="6">
+<attrib name="value" value="32"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Wed Jul 13 10:39:07 2022"><group name="SiteSummary">
+<item name="IOB" rev="7">
+<attrib name="total" value="1000000"/><attrib name="used" value="32"/></item>
+<item name="IOB_OUTBUF" rev="7">
+<attrib name="total" value="1000000"/><attrib name="used" value="32"/></item>
+<item name="PAD" rev="7">
+<attrib name="total" value="1000000"/><attrib name="used" value="32"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Wed Jul 13 10:39:07 2022"><group name="IOB_OUTBUF">
+<item name="DRIVEATTRBOX" rev="7">
+<attrib name="12" value="32"/></item>
+<item name="SLEW" rev="7">
+<attrib name="SLOW" value="32"/></item>
+<item name="SUSPEND" rev="7">
+<attrib name="3STATE" value="32"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Wed Jul 13 10:39:07 2022"><group name="IOB_OUTBUF">
+<item name="IN" rev="7">
+<attrib name="value" value="32"/></item>
+<item name="OUT" rev="7">
+<attrib name="value" value="32"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="7">
+<attrib name="value" value="32"/></item>
+</group>
+<group name="IOB">
+<item name="O" rev="7">
+<attrib name="value" value="32"/></item>
+<item name="PAD" rev="7">
+<attrib name="value" value="32"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

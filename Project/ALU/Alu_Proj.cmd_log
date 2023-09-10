@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Drs/Term6/CAD/New folder/Alu_Cad/Alu_Proj.xst" -ofn "C:/Drs/Term6/CAD/New folder/Alu_Cad/Alu_Proj.syr" 

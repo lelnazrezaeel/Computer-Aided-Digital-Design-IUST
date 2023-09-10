@@ -1,0 +1,24 @@
+V3 11
+FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" 2022/07/13.10:36:35 P.20131013
+EN work/Div_16_by_8 1657693507 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Div_16_by_8/Behavioral 1657693508 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/div.vhd" \
+      EN work/Div_16_by_8 1657693507
+FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" 2022/07/13.10:55:04 P.20131013
+EN work/ALU 1657693509 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/ALU/Behavioral 1657693510 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/simple_alu.vhd" \
+      EN work/ALU 1657693509 CP Div_16_by_8
+FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" 2022/07/13.10:55:04 P.20131013
+EN work/super_alu 1657693511 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/super_alu/Behavioral 1657693512 \
+      FL "D:/iust stuff/4002/CAD/FinalProject/super-alu/super-alu.vhd" \
+      EN work/super_alu 1657693511 CP ALU
