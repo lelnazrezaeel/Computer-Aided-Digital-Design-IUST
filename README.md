@@ -32,9 +32,8 @@ My solutions to IUST's Computer-Aided Digital Design, Fall 2022, Dr. Abdullahi.
 - Code: [Link to Notes](https://github.com/lelnazrezaeel/Computer-Aided-Digital-Design-IUST/tree/main/Notes)
 
 ## <img width="20" height="20" src="https://img.icons8.com/ios/50/41b883/project.png" alt="project"/> Project
-### Project Implementation
 - Description: The report, Implementation files and source code for the ALU Super project.
-- Code: [Link to Project Implementation](https://github.com/lelnazrezaeel/Computer-Aided-Digital-Design-IUST/tree/main/Project)
+- Code: [Link to Project](https://github.com/lelnazrezaeel/Computer-Aided-Digital-Design-IUST/tree/main/Project)
 
 The ALU works as follows:
 - It receives a 43-bit instruction with the following format:
