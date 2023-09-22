@@ -4,7 +4,7 @@ My solutions to IUST's Computer-Aided Digital Design, Fall 2022, Dr. Abdullahi.
 ## <img width="20" height="20" src="https://img.icons8.com/wired/64/41b883/test-passed.png" alt="test-passed"/> Exams
 ### Final
 - Description: Final exam questions from my previous semester.
-- Code: [Link to Final Exam](https://github.com/lelnazrezaeel/Computer-Aided-Digital-Design-IUST/tree/main/Exams/Final)
+- [Link to Final Exam](https://github.com/lelnazrezaeel/Computer-Aided-Digital-Design-IUST/tree/main/Exams/Final)
 
 ### Midterm
 - Description: Midterm exam questions and my answers.
