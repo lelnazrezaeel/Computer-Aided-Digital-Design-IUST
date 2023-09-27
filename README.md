@@ -1,5 +1,5 @@
 # Computer-Aided-Digital-Design-IUST
-My solutions to IUST's Computer-Aided Digital Design, Fall 2022, Dr. Abdullahi.
+My solutions to IUST's Computer-Aided Digital Design, Spring 2022, Dr. Abdullahi.
 
 ## <img width="20" height="20" src="https://img.icons8.com/wired/64/41b883/test-passed.png" alt="test-passed"/> Exams
 ### Final
